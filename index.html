@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Cyber Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <!-- صفحه اول -->
+    <div id="page1" class="page">
+        <h1 id="title">Make a Cyber Pet!</h1>
+        <!-- راهنما -->
+        <p class="instructions">Choose your pet first, then give it a name!</p>
+        <div class="pet-selection">
+            <img src="./images/image.png" id="dog" alt="Dog">
+            <audio id="dog-sound" src="./sounds/mixkit-annoyed-big-dog-barking-51.wav"></audio>
+    
+            <img src="./images/image(3).png" id="cat" alt="Cat">
+            <audio id="cat-sound" src="./sounds/mixkit-cartoon-kitty-begging-meow-92.wav"></audio>
+    
+            <img src="./images/image(1).png" id="parrot" alt="Parrot">
+            <audio id="parrot-sound" src="./sounds/parrot.mp3"></audio>
+    
+            <img src="./images/image(2).png " id="horse" alt="Horse">
+            <audio id="horse-sound" src="./sounds/horse.wav"></audio>
+        </div>
+        <input type="text" id="pet-name" placeholder="Enter pet's name">
+        <button id="make-pet">Make Pet</button>
+    </div>
+ 
+    <!-- صفحه دوم -->
+    <div id="page2" class="page" style="display: none;">
+        <h2 id="pet-name-display"></h2>
+        <img src="./image/dog.jpeg" id="pet-image" alt="selected pet">
+        <div class="stats">
+            <div>
+                <label>Health: </label>
+                <input type="range" id="health" min="0" max="100" value="100">
+            </div>
+            <div>
+                <label>Happy: </label>
+                <input type="range" id="happy" min="0" max="100" value="100">
+            </div>
+            <div>
+                <label>Thirsty: </label>
+                <input type="range" id="thirsty" min="0" max="100" value="50">
+            </div>
+            <div>
+                <label>Hunger: </label>
+                <input type="range" id="hunger" min="0" max="100" value="50">
+            </div>
+        </div>
+        <div class="actions">
+            <button id="eat">Eat</button>
+            <button id="drink">Drink</button>
+            <button id="walk">Walk</button>
+            <button id="play">Play</button>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
